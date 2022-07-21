@@ -1,15 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Todo from './components/todo';
+import TodoList from './TodoList'
+import './App.css'
 
 function App() {
   return (
-    <div className='App container mt-5 d-flex flex-column justify-content-center align-items-center '>
-      
-      <Todo/>
-
+    <div className='App'>
+      <TodoList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

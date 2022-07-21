@@ -1,0 +1,46 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #BD4291;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,132,151,1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(162,22,43);
+}
+
+.TodoList {
+
+  background: rgb(162,22,43);
+  background: linear-gradient(90deg, rgba(162,22,43,1) 9%, rgba(255,132,151,1) 100%);
+
+  padding: 3rem;
+  max-width: 700px;
+  max-height: 800px;
+  overflow: auto;
+  color: #fff;
+  border-radius: 5px;
+  border: solid 5px #D9534F;
+}
+
+.TodoList ol {
+  margin-top: 2.6rem;
+  
+}
+
+.TodoList h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.05rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.TodoList span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+  margin-top: 0.4rem;
+}

@@ -1,0 +1,73 @@
+.Todo {
+  margin: 0 -3rem 4px;
+  
+  background: #ffffff1a;
+  padding: .5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Todo-task {
+  position: relative;
+  cursor: pointer;
+}
+
+.Todo-task.completed {
+  opacity: 0.6;
+}
+
+.Todo-task.completed:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 1rem);
+  }
+}
+
+.Todo-buttons button {
+  border: none;
+  font-size: 1em;
+  margin: 0.4em;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.Todo-edit-form input {
+  flex-grow: 1;
+  font-size: initial;
+  background: #f7f1f1;
+  border: none;
+  outline: none;
+  padding: 0.1em 1.5em;
+}
+
+.Todo-edit-form button {
+  padding: 0.1em 1.3em;
+  background: #f7f1f1;
+  color: #36AE7C;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 0.8em;
+  transition: all ease 0.5s;
+}
+
+.Todo-edit-form button:hover {
+  background: #36AE7C;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
